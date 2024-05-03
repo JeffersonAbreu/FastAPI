@@ -1,0 +1,28 @@
+# variaveis
+@hostname=localhost
+@port=8000
+@host={{hostname}}:{{port}}
+@url={{host}}/api/v1
+
+### get USERS
+
+GET http://{{url}}/usuarios
+
+### get USER
+
+GET http://{{url}}/usuarios/3
+
+
+### POST - Create USER
+POST http://{{url}}/usuarios/signup
+Content-Type: application/json
+Accept-Language: en-US,en;q=0.5
+
+{
+    "nome": "Poliana",
+    "sobrenome": "Jesus",
+    "email": "poli@gmail.com",
+    "senha": "123456"
+}
+
+###
